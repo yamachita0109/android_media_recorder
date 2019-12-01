@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Voice</string>
 
-    <string name="start_btn_name">サンプル再生</string>
-    <string name="stop_btn_name">サンプル停止</string>
+    <string name="start_btn_name">再生</string>
+    <string name="stop_btn_name">停止</string>
     <string name="start_record_btn_name">録音開始</string>
     <string name="stop_record_btn_name">録音停止</string>
     <string name="record_btn_name">録音再生</string>

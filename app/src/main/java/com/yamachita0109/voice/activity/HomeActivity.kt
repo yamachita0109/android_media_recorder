@@ -1,5 +1,6 @@
 package com.yamachita0109.voice.activity
 
+import android.Manifest
 import android.content.Context
 import android.content.Intent
 import android.media.AudioManager
@@ -10,6 +11,7 @@ import android.os.Bundle
 import android.os.Environment
 import android.util.Log
 import android.widget.Button
+import androidx.core.app.ActivityCompat
 import com.yamachita0109.voice.R
 import java.io.File
 import java.lang.Exception
@@ -29,6 +31,10 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
+        ActivityCompat.requestPermissions(this, arrayOf(
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.RECORD_AUDIO
+        ), 1)
 
         startBtn = findViewById(R.id.start_button)
         stopBtn = findViewById(R.id.stop_button)
