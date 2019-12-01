@@ -72,6 +72,7 @@ class HomeActivity : AppCompatActivity() {
             this.debugLog("Record Start")
             val file = File(filePath)
             if (file.exists()) {
+                this.debugLog("file exists")
                 file.delete()
             }
             try {
@@ -106,13 +107,12 @@ class HomeActivity : AppCompatActivity() {
             try {
                 mp = MediaPlayer()
                 mp.setDataSource(filePath)
-                mp.pause()
+                mp.prepare()
                 mp.start()
             } catch (e: Exception) {
                 e.printStackTrace()
             }
         }
-
     }
 
     /**
