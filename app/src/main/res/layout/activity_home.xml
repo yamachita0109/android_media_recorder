@@ -10,65 +10,144 @@
         android:id="@+id/scroll_area"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="再生サンプル"
                 android:textSize="16sp"
-                android:text="音声操作サンプル"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
             <Button
                 android:id="@+id/start_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_back"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:text="@string/start_btn_name"
-                android:textSize="20sp"
                 android:textColor="#e8e8e8"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:background="@drawable/btn_back"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/stop_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_back"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
                 android:text="@string/stop_btn_name"
-                android:textSize="20sp"
                 android:textColor="#e8e8e8"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:background="@drawable/btn_back"
-                app:layout_constraintTop_toBottomOf="@id/start_button"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
-        </LinearLayout>
+                app:layout_constraintTop_toBottomOf="@id/start_button" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:text="録音サンプル"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/start_record_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_back"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/start_record_btn_name"
+                android:textColor="#e8e8e8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/start_record_button" />
+
+            <Button
+                android:id="@+id/stop_record_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_back"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/stop_record_btn_name"
+                android:textColor="#e8e8e8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/start_record_button" />
+
+            <Button
+                android:id="@+id/record_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/btn_back"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/record_btn_name"
+                android:textColor="#e8e8e8"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stop_record_button" />
+
+        </LinearLayout>
 
     </ScrollView>
 
